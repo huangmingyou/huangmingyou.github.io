@@ -45,3 +45,6 @@ grep Codec /proc/asound/card0/codec#2  查看声卡型号
 
         gtk-key-theme-name = "Emacs"
 
+# X window 设置鼠标指针样式
+        ln -s /usr/share/icons/DMZ-White/ ~/icons/default
+
