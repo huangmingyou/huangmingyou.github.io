@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Linux tips
+title: Tips
+tagline: puppet,debian,etc ...
 ---
 {% include JB/setup %}
 
