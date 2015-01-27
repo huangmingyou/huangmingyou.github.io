@@ -10,19 +10,22 @@ tags: []
 
 	apt-get install pptpd
 
-
-	Edit /etc/ppp/pptpd-options
+Edit /etc/ppp/pptpd-options
 	
-	Comment out all refuse-* command and require-mppe-128
+	name pptpd
+	ms-dns 8.8.8.8
+	proxyarp
+	nodefaultroute
+	lock
+	nobsdcomp 
 
-	Edit /etc/pptpd.conf
+
+Edit /etc/pptpd.conf
 
 	set the localip and remoteip
 
-	Edit /etc/ppp/chap-secrets
-	
-	add username and password 
+Edit /etc/ppp/chap-secrets,add username and password 
 
 	username pptpd passwd *
 
-	Restart pptpd
+Restart pptpd
