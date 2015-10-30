@@ -12,6 +12,7 @@ tags: []
 	apt-get install yubikey-personalization libpam-yubico
 
 ## config yubikey
+
 	ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible
 
 ## config pam for one user
@@ -23,5 +24,5 @@ tags: []
 	dpkg-reconfigure libpam-yubico
 
 set parameter to  
-	mode=challenge-response
 
+	mode=challenge-response
